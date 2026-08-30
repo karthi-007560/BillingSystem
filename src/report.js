@@ -104,8 +104,8 @@ export function downloadDayReport(date, bills, expenses) {
   doc.text(`Total expenses: ${onlineTotal + offlineTotal}`, 14, y);
   y += 8;
 
-  doc.setFontSize(12);
-  doc.text(`Net (Sales - Expenses): ${salesTotal - (onlineTotal + offlineTotal)}`, 14, y);
+  // doc.setFontSize(12);
+  // doc.text(`Net (Sales - Expenses): ${salesTotal - (onlineTotal + offlineTotal)}`, 14, y);
 
   doc.save(`sales-report-${date}.pdf`);
 }

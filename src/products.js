@@ -11,4 +11,5 @@ export const DEFAULT_PRODUCTS = [
   { id: "p9", name: "Cutlet", price: 20 },
   { id: "p10", name: "Chicken Puff", price: 30 },
   { id: "p11", name: "Sweets", price: 5 },
+  { id: "p12", name: "Coconut Bun", price: 10 },
 ];
