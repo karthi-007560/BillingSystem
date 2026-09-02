@@ -43,12 +43,15 @@ export default function ExpenseForm({ onAdd, adding }) {
           <option value="online">Online</option>
         </select>
       </div>
-      <input
-        value={paidTo}
-        onChange={(e) => setPaidTo(e.target.value)}
-        placeholder="Paid to (person)"
-        className="w-full border border-slate-200 rounded-lg px-3 py-2 text-sm"
-      />
+      <select
+          value={paidTo}
+          onChange={(e) => setPaidTo(e.target.value)}
+          className="w-1/2 border border-slate-200 rounded-lg px-3 py-2 text-sm"
+        >
+        <option value="paid">Paid</option>
+        <option value="not-paid">Not Paid</option>
+      </select>
+    
 
       <button
         type="submit"
